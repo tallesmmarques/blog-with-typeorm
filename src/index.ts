@@ -3,6 +3,8 @@ import {createConnection} from "typeorm";
 import {Author} from "./entity/Author";
 import express from "express"
 import routes from "./routes";
+import {Commentary} from "./entity/Commentary";
+import {Post} from "./entity/Post";
 
 createConnection({
   "type": "sqlite",
@@ -10,7 +12,9 @@ createConnection({
   "synchronize": true,
   "logging": false,
   "entities": [
-    Author
+    Author,
+    Post,
+    Commentary
   ]
 }).then(() => {
   const app = express();

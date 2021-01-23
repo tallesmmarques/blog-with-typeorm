@@ -27,7 +27,7 @@ export class AuthorController {
       return res.json({error: "This author not exist"})
     })
 
-    const deleteResult = await authorRepository.delete(id)
+    await authorRepository.delete(id)
     return res.json({message: "Author deleted"})
   }
 }
