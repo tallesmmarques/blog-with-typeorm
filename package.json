@@ -1,0 +1,25 @@
+{
+   "name": "blog-with-typeorm",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/express": "^4.17.11",
+      "@types/node": "^8.0.29",
+      "nodemon": "^2.0.7",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "express": "^4.17.1",
+      "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.0.3",
+      "typeorm": "0.2.30"
+   },
+   "scripts": {
+      "start": "node dist/index.js",
+      "start2": "ts-node src/index.ts",
+      "dev": "nodemon dist/index.js",
+      "watch": "tsc -w",
+      "build": "tsc"
+   }
+}
